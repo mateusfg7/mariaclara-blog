@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Setup ZSH
 mv ~/.zshrc ~/.zshrc.bak

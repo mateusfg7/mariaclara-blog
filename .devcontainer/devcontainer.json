@@ -1,13 +1,35 @@
 {
   // Build
-  "name": "Dev Environment",
+  "name": "Maria CLara's Home Page",
   "build": {
     "dockerfile": "./Dockerfile",
     "context": "."
   },
   "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "true",
+      "username": "vscode",
+      "userUid": "1000",
+      "userGid": "1000",
+      "upgradePackages": "true"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/node:1": {}
   },
   // Prepare the container
   "postCreateCommand": "chmod +x .devcontainer/post-create.sh && .devcontainer/post-create.sh"
+  // IDE Customization
+  // "customizations": {
+  //   "vscode": {
+  //     "settings": {
+  //       "terminal.integrated.defaultProfile.linux": "zsh",
+  //       "terminal.integrated.profiles.linux": {
+  //         "zsh": {
+  //           "path": "zsh"
+  //         }
+  //       }
+  //     },
+  //     "remoteUser": "vscode"
+  //   }
+  // }
 }
