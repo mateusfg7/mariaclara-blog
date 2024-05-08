@@ -7,7 +7,7 @@ export function Waves() {
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
             <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
               <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">

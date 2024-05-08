@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { MontainImage } from "./_components/montain-image";
 import { Waves } from "./_components/waves";
 
 export default function Home() {
@@ -10,8 +9,8 @@ export default function Home() {
       </div>
       <div className="border border-foreground flex-1 flex justify-center items-center gap-4 p-6 pl-16">
         <div className="flex-1 flex h-full gap-6">
-          <span className="h-fit scale-flip [writing-mode:vertical-rl]">
-            Lorem ipson sei la oq
+          <span className="h-fit scale-flip [writing-mode:vertical-rl] font-styled">
+            Ai que não sei oq sei la oq mais
           </span>
           <Image
             src="https://wallpaper.forfun.com/fetch/c7/c75c73acc09db223b6fac179fb421e7a.jpeg"
@@ -22,7 +21,7 @@ export default function Home() {
           />
         </div>
         <div className="flex-1 text-xl mb-5">
-          <h1 className="text-5xl font-bold">Maria Clara Brito</h1>
+          <h1 className="text-5xl font-bold font-styled">Maria Clara Brito</h1>
           <span className="italic pl-56">Psicóloga Psicanalista</span>
         </div>
       </div>

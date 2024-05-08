@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Merienda } from "next/font/google";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const merienda = Merienda({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-merienda",
+});
 
 export const metadata: Metadata = {
   title: "Maria Clara's Blog",
@@ -17,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${merienda.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

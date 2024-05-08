@@ -75,6 +75,10 @@ const config = {
       scale: {
         flip: "-1",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)"],
+        styled: ["var(--font-merienda)"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
